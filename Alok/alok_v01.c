@@ -9,9 +9,18 @@ int main()
     setlocale(LC_ALL,"portuguese");
     int *num;
     int n,x;
+    do
+    {
     printf("Digite a quantidade de números do vetor: \n");
     scanf("%d",&n);
+    }
+    while(n<=0);
     num = (int*) malloc(n*sizeof(int));
+    if (num==0)
+    {
+        printf("Erro! Memória insuficiente!");
+        exit(0);
+    }
     printf("Digite um número para ver seus múltiplos: \n");
     scanf("%d",&x);
     printf("Digite os valores do vetor: \n");
