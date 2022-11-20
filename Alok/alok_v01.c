@@ -12,7 +12,7 @@ int main()
     printf("Digite a quantidade de números do vetor: \n");
     scanf("%d",&n);
     num = (int*) malloc(n*sizeof(int));
-    printf("Digite um número para ver seus multiplos: \n");
+    printf("Digite um número para ver seus múltiplos: \n");
     scanf("%d",&x);
     printf("Digite os valores do vetor: \n");
     for(int i=0;i<n;i++)
@@ -26,7 +26,7 @@ int main()
 
 void multi(int *num,int n,int x)
 {
-    int cont;
+    int cont=0;
     for(int i=0;i<n;i++)
     {
         if(num[i]%x==0)
@@ -34,11 +34,11 @@ void multi(int *num,int n,int x)
             cont++;
         }
     }
+    printf("O vetor possui %d valores múltiplos de %d\n",cont,x);
     printf("Os valores do vetor são:\n");
     for(int i=0;i<n;i++)
     {
         printf("O %dº número é [%d] \n",i+1,num[i]);
     }
-    printf("O vetor possui %d valores multiplos de %d",cont,x);
     free(num);
 }
