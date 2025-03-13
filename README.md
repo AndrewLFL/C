@@ -1,3 +1,3 @@
 # C
  
-Meus estudos de C
+Meus exercícios em C da aula de Lógica de Programação no Cotil
